@@ -1,40 +1,89 @@
+/* Valentine's Day Theme */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #f8f8f8;
+    background-color: #ffe6e9; /* Light pink background */
     margin: 0;
     padding: 0;
+    background-image: url('your-heart-image.jpg'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
 }
 
+/* Main container */
 .container {
     max-width: 600px;
     margin: 50px auto;
     background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 105, 135, 0.5);
+    position: relative;
+    overflow: hidden;
 }
 
-h1 {
+/* Heart decorations */
+.container::before, .container::after {
+    content: "❤️";
+    font-size: 30px;
+    position: absolute;
     color: #ff4081;
 }
 
+.container::before {
+    top: -10px;
+    left: -10px;
+}
+
+.container::after {
+    bottom: -10px;
+    right: -10px;
+}
+
+/* Title */
+h1 {
+    color: #ff4081; /* Soft red/pink */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Letter links */
 ul {
     list-style: none;
     padding: 0;
 }
 
 li {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 a {
     text-decoration: none;
-    font-size: 18px;
-    color: #ff4081;
+    font-size: 20px;
+    color: white;
+    background-color: #ff4081;
+    padding: 10px 20px;
+    border-radius: 25px;
     font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
 }
 
 a:hover {
-    text-decoration: underline;
+    background-color: #e6005c;
+    transform: scale(1.1);
+}
+
+/* Heart footer */
+footer {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ff4081;
 }
