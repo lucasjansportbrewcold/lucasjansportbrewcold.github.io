@@ -1,13 +1,21 @@
 .bouquet {
-    display: block;
-    margin: 20px auto;
-    width: 200px; /* Adjust size */
-    animation: float 3s infinite ease-in-out;
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    width: 150px; /* Adjust size */
+    animation: float 3s infinite ease-in-out, glow 1.5s infinite alternate;
 }
 
+/* Floating Animation */
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
+}
+
+/* Soft Glow Effect */
+@keyframes glow {
+    0% { filter: drop-shadow(0 0 5px pink); }
+    100% { filter: drop-shadow(0 0 15px red); }
 }
 
 /* Letter Paper Style */
