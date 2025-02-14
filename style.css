@@ -1,3 +1,38 @@
+/* Letter Paper Style */
+.letter-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-image: url('your-lined-paper-image.jpg'); /* Upload a lined paper image */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Patrick Hand', cursive; /* A handwritten font */
+    line-height: 1.8;
+    font-size: 20px;
+    color: #333;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    border: 2px solid #d3d3d3; /* Light border for realism */
+}
+
+/* Optional: Red Left Margin Line */
+.letter-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 2px;
+    height: 100%;
+    background: red;
+}
+
+/* Handwritten Font (Use Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 /* Valentine's Day Theme */
 body {
     font-family: 'Arial', sans-serif;
